@@ -1,0 +1,19 @@
+#container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    background-color: blueviolet;
+  }
+
+  .top-left2 {
+    position: absolute;
+    top: 32px;
+    left: 16px;
+    background-color: rgb(226, 43, 177, 0.6);
+  }

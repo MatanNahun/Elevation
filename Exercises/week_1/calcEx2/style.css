@@ -1,0 +1,35 @@
+#container{
+    width: 40%;
+    height: 50px;
+    /* border-style: solid; */
+}
+
+#firstSec{
+    width:  33.3% ;
+    box-sizing: border-box;
+    height: 50px;
+    background-color: purple;
+    display: inline-block;
+    float: right;
+    border-style:  solid;    
+}
+#SecondSec{
+    width:  33.3% ;
+    box-sizing: border-box;
+    height: 50px;
+    background-color: pink;
+    display: inline-block;
+    float: left;
+    border-style:  solid;
+}
+
+#ThirdSec{
+    background-color: green;
+    display: inline-block;
+    width:  33.3% ;
+    box-sizing: border-box;;
+    height: 50px;
+    float: center;
+    border-style:  solid;
+
+}
