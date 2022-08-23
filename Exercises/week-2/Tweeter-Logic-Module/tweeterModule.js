@@ -1,6 +1,4 @@
-console.log("hi");
-
-const TweeterLogic = function () {
+const tweeterModule = function () {
   const _posts = [
     {
       text: "First post!",
@@ -25,10 +23,8 @@ const TweeterLogic = function () {
     },
   ];
 
-  let _listPostsId = ["p1", "p2"];
   let _nextPostsId = 3;
 
-  let _listCommentsId = ["c1", "c2", "c3", "c4", "c5", "c6"];
   let _nextCommentsId = 7;
 
   const postsIdMechanism = function () {
@@ -91,7 +87,7 @@ const TweeterLogic = function () {
   };
 };
 
-const tweeter = TweeterLogic();
+const tweeter = tweeterModule();
 
 tweeter.addPost("checkkk222");
 tweeter.removePost("p2");
