@@ -1,0 +1,76 @@
+#page,
+#topPage,
+#bottomPage {
+  height: 100px;
+  width: 300px;
+  display: inline-block;
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  background-color: #b12f2f;
+}
+#topPageBox {
+  display: grid;
+  justify-content: center;
+  margin: auto;
+}
+#inputs,
+#input1,
+#input2 {
+  display: grid;
+  justify-content: center;
+}
+#input1,
+#input2 {
+  margin: 2px;
+}
+#buttonLogin {
+  width: 100px;
+  display: grid;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 25%;
+  border-radius: 10px;
+}
+input:focus-visible {
+  outline: 2px solid #5e5eb6;
+}
+#topPage {
+  height: 300px;
+  background-color: #cd3b3b;
+  display: inline-block;
+}
+#bottomPage {
+  height: 200px;
+  display: inline-block;
+}
+h1 {
+  font-family: cursive;
+  font-size: large;
+  color: aliceblue;
+  display: grid;
+  justify-content: center;
+  margin-top: 25px;
+}
+#accountButton {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 260px;
+  height: 80px;
+  font: 1.2em "Fira Sans", sans-serif;
+  background-color: white;
+  justify-content: left;
+  border-radius: 6px;
+}
+#textDiv {
+  margin-top: 15px;
+  display: inline-block;
+}
+img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  display: grid;
+  justify-content: right;
+  float: right;
+}
