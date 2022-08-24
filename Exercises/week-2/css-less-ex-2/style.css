@@ -1,0 +1,18 @@
+body {
+  background-image: url("https://thumbs.dreamstime.com/z/healthy-food-delivery-take-away-organic-meal-blue-copy-space-clean-eating-concept-fitness-nutrition-plan-144131343.jpg");
+  background-color: #cccccc;
+}
+#container {
+  height: 300px;
+  width: 60%;
+  display: inline-block;
+  background-color: #413d3d;
+  opacity: 0.9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
