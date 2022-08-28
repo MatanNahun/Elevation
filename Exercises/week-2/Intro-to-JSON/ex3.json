@@ -1,0 +1,11 @@
+{
+    "name": "cow",
+    "weigh": 10,
+    "unit": "kilos",
+    "home": "cowshed",
+    "endangered": false,
+    "food": [{"weeds": 10}, {"grass": 90}],
+    "eatenBy": ["lion", "tiger"],
+    "taste": 4
+
+}
