@@ -44,6 +44,7 @@ const nextId = function () {
   return a;
 };
 
+/// appending the input to the page and put them in the local storage as well
 $("#button").on("click", function () {
   let input = $("input").val();
   a = nextId();
@@ -51,14 +52,14 @@ $("#button").on("click", function () {
   wisdom.push({ text: input, id: a });
 
   $("body").append(`<li id="${a}" >${input}</li>`);
-  //   wisdom.push({ text: input, id: nextId() });
-  console.log(wisdom);
   $("input").val("");
 
   if (wisdom.length % 2 == 0) {
     localStorage.setItem("wisdom", JSON.stringify(wisdom));
   }
 });
+
+/// rendering the local storage to the page after you refresh the page
 
 let wisdomParse = JSON.parse(localStorage.wisdom || "[]");
 console.log(wisdomParse);
@@ -69,6 +70,8 @@ for (let object of wisdomParse) {
 $("#button-clear").on("click", function () {
   localStorage.clear();
 });
+
+/// remove li from the local storage
 
 $("body").on("click", "span", function () {
   console.log($(this).closest("li").attr("id"));
