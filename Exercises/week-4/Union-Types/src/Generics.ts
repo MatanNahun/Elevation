@@ -79,14 +79,14 @@ function getValue(val: string | number) : number{
 
 // ex2:
 
-class NumberType<ArrGeneric>{
-    numbers: ArrGeneric[];
+class NumberType<Type>{
+    numbers: Type[];
 
-    constructor(numbers: ArrGeneric[] ){
+    constructor(numbers: Type[] ){
         this.numbers = numbers
     }
 
-    addNumber(num: ArrGeneric) : void{
+    addNumber(num: Type) : void{
         this.numbers.push(num)
 
     }

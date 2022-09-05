@@ -94,9 +94,9 @@ Otherwise, it should return false `, () => {
   expect(ex1.validate(arrWithBool)).toBeTruthy();
   //It should verify that there is at least one boolean in the array
 
-  expect(ex1.validate(arrWithoutBool)).toThrow(
-    new error("Need at least one boolean")
-  );
+  expect(ex1.validate(arrWithoutBool)).toStrictEqual({
+    error: "Need at least one boolean",
+  });
   // If there is no bool in the array it should return error
 
   expect(ex1.validate(arrWithMoreTrue)).toBeTruthy();
