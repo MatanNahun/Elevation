@@ -57,23 +57,24 @@ const Ex = require("./code");
 test("should return true if n is even, false otherwise", () => {
   const ex1 = new Ex.Exercises();
   expect(ex1.isEven(2)).toBeTruthy();
+  expect(ex1.isEven(2.5)).toBeFalsy();
 });
 
 test("should remove at least one element from the array ", () => {
-  const ex1 = new Ex.Exercises();
+  const ex2 = new Ex.Exercises();
   const arr = [1, 2, 3, 4];
 
   const arrLength = arr.length;
-  const arrAfterRemove = ex1.removeAtLeastOne(arr);
+  const arrAfterRemove = ex2.removeAtLeastOne(arr);
   const lengthArrAfterRemove = arrAfterRemove.length;
 
   expect(lengthArrAfterRemove).toBeLessThan(arrLength);
 });
 
 test("should return a clean string without these symbols: !, #, ., , , ", () => {
-  const ex1 = new Ex.Exercises();
-  const stringWithSymbols = "hi!. !, #, ., , , ";
-  const cleanString = ex1.simplify(stringWithSymbols);
+  const ex3 = new Ex.Exercises();
+  const stringWithSymbols = "h7i!. !, #, ., , , ";
+  const cleanString = ex3.simplify(stringWithSymbols);
 
   expect(cleanString).not.toContain("!");
   expect(cleanString).not.toContain("#");
