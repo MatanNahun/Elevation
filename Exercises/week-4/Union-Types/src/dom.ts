@@ -1,9 +1,9 @@
+const domElement = document.querySelector(".foo") as HTMLInputElement;
+domElement.addEventListener("input", function (event) {
+  const e = event.target as HTMLInputElement;
+  console.log(e.value);
+});
 
-
-function doX(){
-        const domElement = document.querySelector('.foo');
-        const inputElement = domElement as HTMLInputElement;
-    
-        console.log(inputElement.value);
-
-}
+domElement.addEventListener("click", function (event) {
+  console.log("hi");
+});
