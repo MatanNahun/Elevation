@@ -1,0 +1,29 @@
+import re
+
+
+def encode(string, num):
+    res = ""
+    for c in string:
+        if ord(c) + num > 90:
+            module = ord(c) + num - 91
+            res += chr(65 + module)
+        else:
+            res += chr(ord(c) + num)
+    return res
+
+
+print(encode("ABXYZ", 3))  # "DEABC"
+
+# problem
+def decode(string, num):
+    res = ""
+    for c in string:
+        if ord(c) - num < 65:
+            module = 65 - (ord(c) - num)
+            res += chr(91 - module)
+        else:
+            res += chr(ord(c) - num)
+    return res
+
+
+print(decode("DEABC", 3))  # "ABXYZ"

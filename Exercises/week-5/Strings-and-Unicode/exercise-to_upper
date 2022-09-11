@@ -1,0 +1,22 @@
+def to_upper(char):
+    if ord(char) > 96 and ord(char) < 123:
+        return chr(ord(char) - 32)
+    else:
+        return char
+
+
+def upper(string):
+    res = ""
+    for c in string:
+        res += to_upper(c)
+    return res
+
+
+print(ord("a"))
+print(ord("A"))
+print(to_upper("d"))  # "D"
+print(to_upper("Q"))  # "Q" (no change)
+print(to_upper("!"))  # "!" (no change)
+
+
+print(upper("I love Python!"))  # "I LOVE PYTHON!"

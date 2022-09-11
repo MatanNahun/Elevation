@@ -1,0 +1,22 @@
+def encode(msg):
+    res = " "
+    for c in msg:
+        res += str(ord(c))
+        res += " "
+    return res
+
+
+print(encode("Hello"))
+
+
+def decode(ords_string):
+    res = ""
+    chars_list = ords_string.split()
+    for c in chars_list:
+        res += chr(int(c))
+    return res
+
+
+print(decode("72 101 108 108 111"))  # "Hello"
+
+print(decode(encode("Hello")))  # "Hello"
