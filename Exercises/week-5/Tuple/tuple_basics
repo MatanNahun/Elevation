@@ -1,0 +1,53 @@
+from asyncio.windows_events import NULL
+from audioop import reverse
+
+
+# fruits_tuple = ("apple", "orange", "banana")
+# print(fruits_tuple)
+# # output: ('apple', 'orange', 'banana')
+
+# numbers = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+# print(numbers[0::2])
+
+
+# empty_tuple = tuple([1, 5, 3])
+
+# print(empty_tuple)
+
+# ========================================
+# ex1:
+my_tuple = (1, (2, "two"), "three", ["for"], {1: "five"}, None, NULL, True)
+print(my_tuple)
+
+# ex2:
+print(my_tuple[3])
+print(my_tuple[-4])
+
+# ex3:
+days = ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+days_without_wednesday = days[:3] + days[4:]
+print(days_without_wednesday)
+
+# ex4:
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+reverse_numbers = numbers[::-1]
+print(reverse_numbers)
+
+# ex5:
+def reverse_without_last_number(tuple):
+    reverse = tuple[::-1]
+    reverse = reverse[:-1:]
+    return reverse
+
+
+print(reverse_without_last_number(numbers))
+
+
+def reverse_without_last_element(tuple):
+    reverse = tuple[::-1]
+    reverse = reverse[1::]
+    return reverse
+
+
+print(reverse_without_last_element(numbers))
