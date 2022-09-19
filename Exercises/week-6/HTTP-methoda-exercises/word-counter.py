@@ -56,6 +56,7 @@ async def add_sentence(request: Request):
         else:
             numNewWords += 1
             wordCounter[word] = 1
+
     return {"text": f"Added {numNewWords} words, {numOldWords} already existed"}
 
 
