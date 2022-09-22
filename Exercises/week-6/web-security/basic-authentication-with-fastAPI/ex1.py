@@ -33,5 +33,7 @@ def home(request: Request):
     return request.user
 
 
+# regrg
+
 if __name__ == "__main__":
     uvicorn.run("ex1:app", host="127.0.0.1", port=8000)  # Starts the uvicorn ASGI
