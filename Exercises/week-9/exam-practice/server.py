@@ -7,6 +7,7 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
+
 app.mount("/client", StaticFiles(directory="client"), name="client")
 
 
