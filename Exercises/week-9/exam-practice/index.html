@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="client/style.css" />
   </head>
   <body>
-    <h1 class="title">hi</h1>
+    <div class="title">hi</div>
 
     <!-- script for players cards -->
     <script id="names-template" type="text/x-handlebars-template">
       <!-- {{#each names}} -->
+      <div class="card-name">
         <div class="name">{{message}}</div>
+        <button class="change-color-btn">change color</button>
+      </div>
       <!-- {{/each}} -->
     </script>
 
