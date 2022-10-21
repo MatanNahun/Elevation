@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="client/style.css" />
   </head>
   <body>
-    <h1>hi</h1>
+    <h1 class="title">hi</h1>
+
+    <!-- script for players cards -->
+    <script id="names-template" type="text/x-handlebars-template">
+      <!-- {{#each names}} -->
+        <div class="name">{{message}}</div>
+      <!-- {{/each}} -->
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
 
     <script
@@ -16,6 +24,8 @@
       integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
       crossorigin="anonymous"
     ></script>
-    <script src="/client/main.js"></script>
+    <script src="/client/Model.js"></script>
+    <script src="/client/Render.js"></script>
+    <script src="/client/Controller.js"></script>
   </body>
 </html>
