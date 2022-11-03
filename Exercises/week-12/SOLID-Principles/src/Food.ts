@@ -1,8 +1,8 @@
 class Food {
-  type: String;
+  type: string;
   dailyQuantityGrams: number;
 
-  constructor(type: String, dailyQuantityGrams: number) {
+  constructor(type: string, dailyQuantityGrams: number) {
     this.type = type;
     this.dailyQuantityGrams = dailyQuantityGrams;
   }
