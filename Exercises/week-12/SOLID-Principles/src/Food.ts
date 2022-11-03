@@ -1,9 +1,17 @@
 class Food {
-  type: string;
-  dailyQuantityGrams: number;
+  private _type: string;
+  private _dailyQuantityGrams: number;
 
   constructor(type: string, dailyQuantityGrams: number) {
-    this.type = type;
-    this.dailyQuantityGrams = dailyQuantityGrams;
+    this._type = type;
+    this._dailyQuantityGrams = dailyQuantityGrams;
+  }
+
+  get type(): string {
+    return this._type;
+  }
+
+  get dailyQuantityGrams(): number {
+    return this._dailyQuantityGrams;
   }
 }

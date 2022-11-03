@@ -1,9 +1,17 @@
 class Animal {
-  name: string;
-  food: Food;
+  private _name: string;
+  private _food: Food;
 
   constructor(name: string, food: Food) {
-    this.name = name;
-    this.food = food;
+    this._name = name;
+    this._food = food;
+  }
+
+  get food(): Food {
+    return this._food;
+  }
+
+  feed() {
+    return `${this._name} has just ate!`;
   }
 }

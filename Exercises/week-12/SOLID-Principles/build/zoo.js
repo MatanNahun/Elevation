@@ -1,35 +1,25 @@
 "use strict";
-class Animal {
-    constructor(type, name, food) {
-        this.type = type;
-        this.name = name;
-        this.food = food;
+class Zoo {
+    constructor() {
+        this._supply = {};
+        this._animals = [];
+        this._supply = {
+            meat: new Food("meat", 1000000),
+            plankton: new Food("plankton", 2000000000),
+            algae: new Food("algae", 1500),
+            seeds: new Food("seeds", 1200),
+            worms: new Food("worms", 1000),
+        };
     }
-}
-class Mammal extends Animal {
-    constructor(type, name, food, durationOfPregnancy) {
-        super(type, name, food);
-        this._durationOfPregnancy = durationOfPregnancy;
+    feedAnimal(animal) { }
+    removeFromSupply(food) {
+        this._supply[food.type] -= food.dailyQuantityGrams;
     }
-    get durationOfPregnancy() {
-        return this._durationOfPregnancy;
-    }
-}
-class SeaCreature extends Animal {
-    constructor(type, name, food, lowestDepth) {
-        super(type, name, food);
-        this._lowestDepth = lowestDepth;
-    }
-    get lowestDepth() {
-        return this._lowestDepth;
-    }
-}
-class Bird extends Animal {
-    constructor(type, name, food, wingSpan) {
-        super(type, name, food);
-        this._wingSpan = wingSpan;
-    }
-    get wingSpan() {
-        return this._wingSpan;
+    dailyfeed() {
+        this._animals.forEach((animal) => {
+            animal.feed();
+            let animalFood = animal.food;
+            this.removeFromSupply(animalFood);
+        });
     }
 }
