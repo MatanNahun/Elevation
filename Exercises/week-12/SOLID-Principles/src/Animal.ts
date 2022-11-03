@@ -1,8 +1,8 @@
 class Animal {
   name: string;
-  food: object;
+  food: Food;
 
-  constructor(name: string, food: object) {
+  constructor(name: string, food: Food) {
     this.name = name;
     this.food = food;
   }
