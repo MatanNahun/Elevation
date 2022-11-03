@@ -14,4 +14,8 @@ class Food {
   get dailyQuantityGrams(): number {
     return this._dailyQuantityGrams;
   }
+
+  set dailyQuantityGrams(amount: number) {
+    this._dailyQuantityGrams = amount;
+  }
 }
