@@ -45,7 +45,11 @@ export const counterSlice = createSlice({
     },
     incrementRandomAndCount: (state) => {
       state.valueRandom += 1;
-      state.value += 1;
+      if (state.value % 10 == 0) {
+        state.value += 5;
+      } else {
+        state.value += 1;
+      }
     },
   },
   // The `extraReducers` field lets the slice handle actions defined elsewhere,
